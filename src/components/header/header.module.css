@@ -1,0 +1,41 @@
+
+.mainDiv{
+    margin-top:2rem;
+}
+.childDiv{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    margin-left:5rem
+}
+
+
+.firstDiv span{
+    font-size: 1.5rem;
+}
+.icon{
+    padding-top: 10px;
+    display:flex;
+    gap:20px;
+    margin-left:-46rem;
+    font-size: 1.2rem;
+}
+
+.lastDiv{
+    margin-right: 18rem;
+    display:flex;
+    gap:28px;
+    font-size:2rem
+}
+
+.bottomDiv{
+    margin-left:4rem;
+}
+
+.menuOne{
+    margin-left:0.7rem;
+}
+.menuTwo{
+
+    margin-left:7.9rem;
+}
