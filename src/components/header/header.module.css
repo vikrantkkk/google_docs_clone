@@ -65,9 +65,20 @@ span{
 }
 
 .menuOne{
-    margin-left:0.7rem;
+    margin-left:0.7rem; 
+    padding:50px;
 }
-.menuTwo{
 
-    margin-left:7.9rem;
+.menuTwo{
+    margin-left:7rem;
+}
+
+.menuThree{
+    margin-left: 10.2rem;
+}
+.headerTwoDiv{
+    width:20rem;
+}
+.headerTwoDiv span{
+    padding-left: 1rem;
 }

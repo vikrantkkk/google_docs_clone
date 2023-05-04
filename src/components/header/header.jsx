@@ -11,7 +11,16 @@ import { MdOutlineMessage } from "react-icons/md";
 import { BiVideoPlus } from "react-icons/bi";
 import { AiOutlineLock } from "react-icons/ai";
 import { BsFillFileEarmarkTextFill } from "react-icons/bs";
-// import { HiOutlineDownload } from "react-icons/hi";
+import { HiOutlineDownload } from "react-icons/hi";
+import { MdOutlineDriveFileRenameOutline } from "react-icons/md";
+import { MdPrint } from "react-icons/md";
+import { MdOutlineContentPaste } from "react-icons/md";
+import { MdSelectAll } from "react-icons/md";
+import { BiImageAlt } from "react-icons/bi";
+import { MdOutlineTableChart } from "react-icons/md";
+import { BiBarChartSquare } from "react-icons/bi";
+import ArticleIcon from '@mui/icons-material/Article';
+import CopyAllIcon from '@mui/icons-material/CopyAll';
 
 export default function Header() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -32,6 +41,18 @@ export default function Header() {
     setAnchorE2(null);
   };
 
+
+  const [anchorE3, setAnchorE3] = useState(null);
+  const open3 = Boolean(anchorE3);
+  const handleClick3 = (event) => {
+    setAnchorE3(event.currentTarget);
+  };
+  const handleClose3 = () => {
+    setAnchorE3(null);
+  };
+
+ 
+
   return (
     <div className={Styles.mainDiv}>
       <div className={Styles.childDiv}>
@@ -40,7 +61,7 @@ export default function Header() {
         </div>
 
         <div className={Styles.icon}>
-          <AiOutlineStar />
+          <AiOutlineStar/>
           <MdDriveFileMoveOutline />
           <BsCloudCheck />
         </div>
@@ -85,10 +106,12 @@ export default function Header() {
           }}
           className={Styles.menuOne}
         >
-          <MenuItem onClick={handleClose}>New</MenuItem>
-         <MenuItem onClick={handleClose}>Download</MenuItem>
-          <MenuItem onClick={handleClose}>Rename</MenuItem>
-          <MenuItem onClick={handleClose}>Print</MenuItem>
+          <div className={Styles.headerTwoDiv}>
+          <MenuItem onClick={handleClose}><ArticleIcon/><span>New</span></MenuItem>
+         <MenuItem onClick={handleClose}><HiOutlineDownload/><span>Download</span></MenuItem>
+          <MenuItem onClick={handleClose}><MdOutlineDriveFileRenameOutline/><span>Rename</span></MenuItem>
+          <MenuItem onClick={handleClose}><MdPrint/><span>Print</span></MenuItem>
+          </div>
         </Menu>
 
         <Button
@@ -110,9 +133,37 @@ export default function Header() {
           }}
           className={Styles.menuTwo}
         >
-          <MenuItem onClick={handleClose2}>Copy</MenuItem>
-          <MenuItem onClick={handleClose2}>Paste</MenuItem>
-          <MenuItem onClick={handleClose2}>Select All</MenuItem>
+          <div className={Styles.headerTwoDiv}>
+          <MenuItem onClick={handleClose2}><CopyAllIcon/><span>Copy</span></MenuItem>
+          <MenuItem onClick={handleClose2}><MdOutlineContentPaste/><span>Paste</span></MenuItem>
+          <MenuItem onClick={handleClose2}><MdSelectAll/><span>Select All</span></MenuItem>
+          </div>
+        </Menu>
+
+        <Button
+          id="basic-button3"
+          aria-controls={open3 ? "basic-menu3" : undefined}
+          aria-haspopup="true"
+          aria-expanded={open3 ? "true" : undefined}
+          onClick={handleClick3}
+        >
+          Insert
+        </Button>
+        <Menu
+          id="basic-menu3"
+          anchorE3={anchorE3}
+          open={open3}
+          onClose={handleClose3}
+          MenuListProps={{
+            "aria-labelledby": "basic-button3",
+          }}
+          className={Styles.menuThree}
+        >
+          <div className={Styles.headerTwoDiv}>
+          <MenuItem onClick={handleClose3}><BiImageAlt/><span>Image</span></MenuItem>
+          <MenuItem onClick={handleClose3}><MdOutlineTableChart/><span>Table</span></MenuItem>
+          <MenuItem onClick={handleClose3}><BiBarChartSquare/><span>Chart</span></MenuItem>
+          </div>
         </Menu>
       </div>
     </div>
