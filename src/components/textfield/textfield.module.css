@@ -1,0 +1,26 @@
+.main{
+    width: 75%;
+    padding: 1vh;
+    background-color:#f0f3fa;
+    position: absolute;
+    left: 25%;
+    
+}
+
+.inputarea{
+    background-color: #fff;
+    width: 50%;
+}
+ /* {
+    outline: 'none';
+        border: '1px solid #ddd';
+        border-radius: '4px';
+        padding: '8px';
+        min-height: '50px';
+        line-height: '1.5';
+        font-size: '16px';
+        font-family: 'Arial, sans-serif';
+       font-weight: '400';
+        color: '#333';
+   
+} */
