@@ -4,11 +4,26 @@ import Textfield from './Textfield'
 import styles from './Combine.module.css'
 function Combine() {
   return (
+    
     <div className={styles.main} >
       <RightSession/>
       <Textfield/>
+      <Div/>
+    
     </div>
+    
   )
 }
 
 export default Combine
+
+function Div(){
+  return(
+    <div style={{
+     width:'25%',
+     backgroundColor:"red"
+    }}>
+
+    </div>
+  )
+}

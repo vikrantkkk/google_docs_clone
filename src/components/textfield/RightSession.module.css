@@ -1,5 +1,22 @@
 .main{
     width: 25%;
     height: 100vh;
-    background-color: rgb(241, 239, 236);
+    background-color: #f0f3fa;
+    
+    position: fixed;
+    left: 0;
+    height: 120%;
+    border-right: 1px solid #e6ecf0;
+ 
+}
+.toggle_icon {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 0.3rem;
+    border: none;
+   
+}
+.toggle_icon:hover{
+   background-color: #e8ecef;
+    border-radius: 49%;
 }

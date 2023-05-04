@@ -1,7 +1,15 @@
 .main{
-    width: 50%;
-   
+    width: 75%;
     padding: 1vh;
+    background-color:#f0f3fa;
+    position: absolute;
+    left: 25%;
+    
+}
+
+.inputarea{
+    background-color: #fff;
+    width: 50%;
 }
  /* {
     outline: 'none';
