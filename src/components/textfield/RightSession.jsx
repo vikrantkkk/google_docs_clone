@@ -12,6 +12,7 @@ function RightSession() {
   }
   const icon = isOn ? <BiMenu /> : <RxCross2 />;
   return (
+    <div className={styles.parent}>
     <div className={styles.main}>
      <button onClick={handelClick} className={styles.toggle_icon}>
         {icon}
@@ -20,9 +21,8 @@ function RightSession() {
      {
       icon==<RxCross2/>?<input/> : ""
      }
-     
-     
 
+     </div>
      
     </div>
   )

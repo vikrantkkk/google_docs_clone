@@ -1,13 +1,12 @@
 .main{
     width: 25%;
-    height: 100vh;
-    background-color: #f0f3fa;
-    
     position: fixed;
     left: 0;
     height: 120%;
     border-right: 1px solid #e6ecf0;
  
+
+    background-color: #f0f3fa;
 }
 .toggle_icon {
     margin-top: 1rem;
@@ -19,4 +18,7 @@
 .toggle_icon:hover{
    background-color: #e8ecef;
     border-radius: 49%;
+}
+.parent{
+    width: 25%;
 }

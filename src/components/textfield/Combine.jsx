@@ -8,7 +8,7 @@ function Combine() {
     <div className={styles.main} >
       <RightSession/>
       <Textfield/>
-      <Div/>
+      
     
     </div>
     
