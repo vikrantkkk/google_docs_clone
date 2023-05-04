@@ -1,7 +1,6 @@
 import React from 'react'
 
 import styles from './Textfield.module.css'
-import RightSession from './RightSession'
 
 function Textfield() {
   return (

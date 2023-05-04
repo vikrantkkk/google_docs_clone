@@ -2,6 +2,7 @@ import React from 'react'
 import RightSession from './RightSession'
 import Textfield from './Textfield'
 import styles from './Combine.module.css'
+
 function Combine() {
   return (
     
@@ -15,15 +16,5 @@ function Combine() {
   )
 }
 
-export default Combine
+export default Combine;
 
-function Div(){
-  return(
-    <div style={{
-     width:'25%',
-     backgroundColor:"red"
-    }}>
-
-    </div>
-  )
-}
