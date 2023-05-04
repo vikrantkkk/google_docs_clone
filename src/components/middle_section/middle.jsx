@@ -23,6 +23,8 @@ import FormatListNumberedIcon from "@mui/icons-material/FormatListNumbered";
 import FormatIndentDecreaseIcon from "@mui/icons-material/FormatIndentDecrease";
 import FormatIndentIncreaseIcon from "@mui/icons-material/FormatIndentIncrease";
 import FormatClearIcon from "@mui/icons-material/FormatClear";
+import SelectLabels from "../../atoms/Selector";
+import IncDecBtn from "../../atoms/IncDecCount";
 const Middle = () => {
   return (
     <div className={styles.mainu_bar}>
@@ -31,7 +33,11 @@ const Middle = () => {
       <BiPrinter />
       <SpellcheckIcon />
       <AiOutlineFormatPainter />
-      //100% //normaltext //arial //fontsize
+     <SelectLabels/>
+      //normaltext 
+      //arial 
+      <IncDecBtn/>
+      {/* fontsize */}
       <FormatBoldIcon />
       <FormatItalicIcon />
       <FormatUnderlinedIcon />
@@ -41,7 +47,7 @@ const Middle = () => {
       <BiCommentAdd />
       <InsertPhotoIcon />
       <FormatAlignLeftIcon />
-      not cmplt
+      {/* not cmplt */}
       <FormatLineSpacingIcon />
       <ChecklistIcon />
       <FormatListBulletedIcon />
