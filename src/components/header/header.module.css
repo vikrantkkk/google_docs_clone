@@ -1,0 +1,73 @@
+
+.mainDiv{
+    margin-top:2rem;
+}
+.childDiv{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    margin-left:5rem
+}
+.firstDiv{
+    margin-left: -1rem;
+}
+
+.firstDiv span{
+    font-size: 1.5rem;
+
+}
+.icon{
+    padding-top: 10px;
+    display:flex;
+    gap:20px;
+    margin-left:-46rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.lastDiv{
+    margin-right: 12rem;
+    display:flex;
+    gap:28px;
+    font-size:1.8rem;
+    cursor:pointer;
+}
+.lock{
+    font-size: 2.5rem;
+    margin-top: -1.2rem;
+   
+
+}
+span{
+    font-size: medium;
+}
+.lock button{
+    cursor: pointer;
+    padding-bottom:.2rem;
+    border-radius: 2rem;
+    height:2.5rem;
+    width:6rem;
+    background-color: rgba(127, 253, 255, 0.847);
+    
+}
+
+.bottomDiv{
+    margin-left:.5rem;
+    margin-top: -1.5rem;
+}
+.fileButton{
+    font-size:2rem;
+    height:4.7px;
+    border:none;
+    color:blue;
+    background-color: white;
+    cursor: pointer;
+}
+
+.menuOne{
+    margin-left:0.7rem;
+}
+.menuTwo{
+
+    margin-left:7.9rem;
+}
