@@ -1,0 +1,10 @@
+.mainu_bar{
+    margin-top: 1rem;
+    background-color: #edf2fa;
+    border-radius: 2rem;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
