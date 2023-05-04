@@ -1,6 +1,6 @@
 
 .mainDiv{
-    margin-top:2rem;
+    margin-top:.8rem;
 }
 .childDiv{
     display:flex;
@@ -39,7 +39,9 @@
 
 }
 span{
-    font-size: medium;
+    font-size: 18px;
+    gap:5px;
+    font-family: Roboto;
 }
 .lock button{
     cursor: pointer;
@@ -47,12 +49,13 @@ span{
     border-radius: 2rem;
     height:2.5rem;
     width:6rem;
-    background-color: rgba(127, 253, 255, 0.847);
+    background-color: #C2E7FF;
+    
     
 }
 
 .bottomDiv{
-    margin-left:.5rem;
+    margin-left:1rem;
     margin-top: -1.5rem;
 }
 .fileButton{
@@ -70,11 +73,13 @@ span{
 }
 
 .menuTwo{
-    margin-left:7rem;
+    margin-left:6.7rem;
+    margin-top:-3.5rem;
 }
 
 .menuThree{
     margin-left: 10.2rem;
+    margin-top:-3.5rem;
 }
 .headerTwoDiv{
     width:20rem;

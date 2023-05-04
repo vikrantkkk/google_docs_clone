@@ -1,8 +1,9 @@
 .mainu_bar{
     margin-top: 1rem;
+    margin-left: 1rem;
     background-color: #edf2fa;
     border-radius: 2rem;
-    width: 100vw;
+    width: 97vw;
     height: 5vh;
     display: flex;
     align-items: center;

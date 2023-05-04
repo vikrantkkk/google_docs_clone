@@ -7,8 +7,6 @@ function App() {
     <div className="App">
       <div className="Header">
         <Header />
-      </div>
-      <div className="Middle">
         <Middle />
       </div>
       <div className="Combine">
