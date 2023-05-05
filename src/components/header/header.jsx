@@ -23,6 +23,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 import CopyAllIcon from '@mui/icons-material/CopyAll';
 
 export default function Header() {
+
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -51,8 +52,16 @@ export default function Header() {
     setAnchorE3(null);
   };
 
- 
+  const handleCopy=()=>{
+    document.execCommand('copy',false,null)
+  }
 
+  const handleSelect=()=>{
+    document.execCommand("selectAll",false,null)
+  }
+
+  
+ 
   return (
     <div className={Styles.mainDiv}>
       <div className={Styles.childDiv}>
@@ -107,7 +116,7 @@ export default function Header() {
           className={Styles.menuOne}
         >
           <div className={Styles.headerTwoDiv}>
-          <MenuItem onClick={handleClose}><ArticleIcon/><span>New</span></MenuItem>
+          <MenuItem onClick={handleClose} ><ArticleIcon/><span>New</span></MenuItem>
          <MenuItem onClick={handleClose}><HiOutlineDownload/><span>Download</span></MenuItem>
           <MenuItem onClick={handleClose}><MdOutlineDriveFileRenameOutline/><span>Rename</span></MenuItem>
           <MenuItem onClick={handleClose}><MdPrint/><span>Print</span></MenuItem>
@@ -134,9 +143,9 @@ export default function Header() {
           className={Styles.menuTwo}
         >
           <div className={Styles.headerTwoDiv}>
-          <MenuItem onClick={handleClose2}><CopyAllIcon/><span>Copy</span></MenuItem>
-          <MenuItem onClick={handleClose2}><MdOutlineContentPaste/><span>Paste</span></MenuItem>
-          <MenuItem onClick={handleClose2}><MdSelectAll/><span>Select All</span></MenuItem>
+          <MenuItem  onClick={handleCopy}><CopyAllIcon/><span>Copy</span></MenuItem>
+          <MenuItem ><MdOutlineContentPaste/><span>Paste</span></MenuItem>
+          <MenuItem onClick={handleSelect}><MdSelectAll/><span>Select All</span></MenuItem>
           </div>
         </Menu>
 

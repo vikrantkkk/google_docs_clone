@@ -26,12 +26,36 @@ import FormatClearIcon from "@mui/icons-material/FormatClear";
 import SelectLabels from "../../atoms/Selector";
 import IncDecBtn from "../../atoms/IncDecCount";
 import Editings from "../../atoms/Editing";
+
 const Middle = () => {
+
+  const handleBold=()=>{
+    document.execCommand('bold',false,null)
+  }
+
+  const handleItalic=()=>{
+    document.execCommand('italic', false, null)
+  }
+
+  const handleUnderline=()=>{
+    document.execCommand('underline',false,null)
+  }
+
+  const handleUndo=()=>{
+    document.execCommand("undo", false,null)
+  }
+
+  const handleRedo=()=>{
+    document.execCommand("redo", false,null)
+  }
+
+  
+
 
   return (
     <div className={styles.mainu_bar}>
-      <BiUndo />
-      <BiRedo />
+      <BiUndo onClick={handleUndo}/>
+      <BiRedo onClick={handleRedo}/>
       <BiPrinter />
       <SpellcheckIcon />
       <AiOutlineFormatPainter />
@@ -39,9 +63,9 @@ const Middle = () => {
       
       <IncDecBtn/>
       {/* fontsize */}
-      <FormatBoldIcon />
-      <FormatItalicIcon/>
-      <FormatUnderlinedIcon />
+      <FormatBoldIcon onClick={handleBold} />
+      <FormatItalicIcon onClick={handleItalic}/>
+      <FormatUnderlinedIcon onClick={handleUnderline} />
       <TbTextColor />
       <BiHighlight />
       <InsertLinkIcon />
