@@ -1,0 +1,13 @@
+select:focus {
+    outline: none;
+  }
+  select{
+    border: none;
+    padding:2px ;
+    background-color: #edf2fa;
+    font-size: 1rem;
+  }
+  select:hover{
+    background-color: rgb(231, 235, 238);
+    border-radius: 5px;
+  }

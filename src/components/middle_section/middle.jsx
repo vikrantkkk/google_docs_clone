@@ -25,6 +25,7 @@ import FormatIndentIncreaseIcon from "@mui/icons-material/FormatIndentIncrease";
 import FormatClearIcon from "@mui/icons-material/FormatClear";
 import SelectLabels from "../../atoms/Selector";
 import IncDecBtn from "../../atoms/IncDecCount";
+import Normaltext, { Fontstyle } from "./Normaltext";
 const Middle = () => {
   return (
     <div className={styles.mainu_bar}>
@@ -34,8 +35,8 @@ const Middle = () => {
       <SpellcheckIcon />
       <AiOutlineFormatPainter />
      <SelectLabels/>
-      //normaltext 
-      //arial 
+      <Normaltext/>
+      <Fontstyle/>
       <IncDecBtn/>
       {/* fontsize */}
       <FormatBoldIcon />
