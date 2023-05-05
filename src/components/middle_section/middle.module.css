@@ -3,9 +3,14 @@
     margin-left: 1rem;
     background-color: #edf2fa;
     border-radius: 2rem;
-    width: 97vw;
+    max-width: 97vw;
     height: 5vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
+.editings-container{
+    border:none;
+}
+

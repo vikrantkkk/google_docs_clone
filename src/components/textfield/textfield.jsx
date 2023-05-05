@@ -6,7 +6,7 @@ function Textfield() {
   return (
     <div className={styles.main}>
      <div className={styles.inputarea} 
-     contentEditable
+     contentEditable="true"
      style={{
         
         outline: 'none',
