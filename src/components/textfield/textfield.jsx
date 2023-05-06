@@ -6,7 +6,8 @@ function Textfield() {
   return (
     <div className={styles.main}>
      <div className={styles.inputarea} 
-     contentEditable="true"
+     contentEditable="true" 
+
      style={{
         
         outline: 'none',
@@ -20,7 +21,8 @@ function Textfield() {
         color: '#333',
         marginTop:'1rem'
       }}
-     ></div>
+      >
+     </div>
     </div>
   )
 }

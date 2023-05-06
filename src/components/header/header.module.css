@@ -55,18 +55,23 @@ span{
 }
 
 .bottomDiv{
+   
     margin-left:1rem;
-    margin-top: -1.5rem;
+    margin-top: -3.5rem;
 }
 .fileButton{
-    font-size:2rem;
+    margin-top:1.8rem;
+    font-size:2.5rem;
     height:4.7px;
     border:none;
     color:blue;
     background-color: white;
     cursor: pointer;
 }
-
+.buttonDiv{
+    margin-left:2rem;
+    margin-top:-2.3rem;
+}
 .menuOne{
     margin-left:0.7rem; 
     padding:50px;
@@ -86,4 +91,8 @@ span{
 }
 .headerTwoDiv span{
     padding-left: 1rem;
+}
+
+.btn{
+color:black;
 }
