@@ -11,10 +11,7 @@ import { AiOutlineLock } from "react-icons/ai";
 import { BsFillFileEarmarkTextFill } from "react-icons/bs";
 import Buttons from "./Button";
 
-
 export default function Header() {
-
-
   return (
     <div className={Styles.mainDiv}>
       <div className={Styles.childDiv}>
@@ -23,7 +20,7 @@ export default function Header() {
         </div>
 
         <div className={Styles.icon}>
-          <AiOutlineStar/>
+          <AiOutlineStar />
           <MdDriveFileMoveOutline />
           <BsCloudCheck />
         </div>
@@ -36,7 +33,7 @@ export default function Header() {
             <button>
               <span>
                 <AiOutlineLock />
-                <span>Share</span>
+                Share
               </span>
             </button>
           </div>
@@ -48,9 +45,8 @@ export default function Header() {
           <BsFillFileEarmarkTextFill />
         </button>
         <div className={Styles.buttonDiv}>
-        <Buttons/>
+          <Buttons />
         </div>
-
       </div>
     </div>
   );

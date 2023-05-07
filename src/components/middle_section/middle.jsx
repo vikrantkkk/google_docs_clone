@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import styles from "./Middle.module.css";
 import { BiUndo } from "react-icons/bi";
 import { BiRedo } from "react-icons/bi";
@@ -15,8 +15,8 @@ import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
 // import InsertPhotoIcon from "@mui/icons-material/InsertPhoto";
 import FormatAlignLeftIcon from "@mui/icons-material/FormatAlignLeft";
-import FormatAlignRightIcon from '@mui/icons-material/FormatAlignRight';
-import FormatAlignCenterIcon from '@mui/icons-material/FormatAlignCenter';
+import FormatAlignRightIcon from "@mui/icons-material/FormatAlignRight";
+import FormatAlignCenterIcon from "@mui/icons-material/FormatAlignCenter";
 // import AlignItems from "../../atoms/AlignItems";
 import FormatLineSpacingIcon from "@mui/icons-material/FormatLineSpacing";
 import ChecklistIcon from "@mui/icons-material/Checklist";
@@ -26,71 +26,66 @@ import FormatIndentDecreaseIcon from "@mui/icons-material/FormatIndentDecrease";
 import FormatIndentIncreaseIcon from "@mui/icons-material/FormatIndentIncrease";
 import FormatClearIcon from "@mui/icons-material/FormatClear";
 import Normaltext from "./Normaltext";
-import {Fontstyle}  from "./Normaltext";
+import { Fontstyle } from "./Normaltext";
 import SelectLabels from "../../atoms/Selector";
 import IncDecBtn from "../../atoms/IncDecCount";
 import Editings from "../../atoms/Editing";
 import InsertPhoto from "./InsertPhoto";
 
-
 const Middle = () => {
+  const handleBold = () => {
+    document.execCommand("bold", false, null);
+  };
 
-  const handleBold=()=>{
-    document.execCommand('bold',false,null)
-  }
+  const handleItalic = () => {
+    document.execCommand("italic", false, null);
+  };
 
-  const handleItalic=()=>{
-    document.execCommand('italic', false, null)
-  }
+  const handleUnderline = () => {
+    document.execCommand("underline", false, null);
+  };
 
-  const handleUnderline=()=>{
-    document.execCommand('underline',false,null)
-  }
+  const handleUndo = () => {
+    document.execCommand("undo", false, null);
+  };
 
-  const handleUndo=()=>{
-    document.execCommand("undo", false,null)
-  }
-
-  const handleRedo=()=>{
-    document.execCommand("redo", false,null)
-  }
-  const handleRight=()=>{
-    document.execCommand('justifyRight',false,null)
-  }
-  const handleLeft=()=>{
-    document.execCommand('justifyLeft',false,null)
-  }
-  const handleCenter=()=>{
-    document.execCommand('justifyCenter',false,null)
-  }
-
-  
-  
+  const handleRedo = () => {
+    document.execCommand("redo", false, null);
+  };
+  const handleRight = () => {
+    document.execCommand("justifyRight", false, null);
+  };
+  const handleLeft = () => {
+    document.execCommand("justifyLeft", false, null);
+  };
+  const handleCenter = () => {
+    document.execCommand("justifyCenter", false, null);
+  };
 
   return (
     <div className={styles.mainu_bar}>
-      <BiUndo onClick={handleUndo}/>
-      <BiRedo onClick={handleRedo}/>
+      <BiUndo onClick={handleUndo} />
+      <BiRedo onClick={handleRedo} />
       <BiPrinter />
       <SpellcheckIcon />
       <AiOutlineFormatPainter />
-     <SelectLabels/>
-     <Normaltext />
-     <Fontstyle />
-      
-      <IncDecBtn/>
+      <SelectLabels />
+      <Normaltext />
+      <Fontstyle />
+
+      <IncDecBtn />
       {/* fontsize */}
       <FormatBoldIcon onClick={handleBold} />
-      <FormatItalicIcon onClick={handleItalic}/>
+      <FormatItalicIcon onClick={handleItalic} />
       <FormatUnderlinedIcon onClick={handleUnderline} />
       <TbTextColor />
       <BiHighlight />
-      <InsertLinkIcon/>
+      <InsertLinkIcon />
       <BiCommentAdd />
       <InsertPhoto />
       <FormatAlignLeftIcon onClick={handleLeft} />
-      <FormatAlignRightIcon onClick={handleRight}/>
-      <FormatAlignCenterIcon onClick={handleCenter}/>
+      <FormatAlignRightIcon onClick={handleRight} />
+      <FormatAlignCenterIcon onClick={handleCenter} />
       {/* <AlignItems/> */}
       {/* not cmplt */}
       <FormatLineSpacingIcon />
@@ -100,7 +95,7 @@ const Middle = () => {
       <FormatIndentDecreaseIcon />
       <FormatIndentIncreaseIcon />
       <FormatClearIcon />
-      <Editings className="editings-container"/>
+      <Editings className="editings-container" />
       <RiArrowDropUpLine />
     </div>
   );

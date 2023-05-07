@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 import InsertPhotoIcon from "@mui/icons-material/InsertPhoto";
 
 export default function InsertPhoto() {
@@ -10,10 +10,10 @@ export default function InsertPhoto() {
     const reader = new FileReader();
     reader.onload = function (event) {
       const dataURL = event.target.result;
-      const img = document.createElement('img');
+      const img = document.createElement("img");
       img.src = dataURL;
-      img.style.width = '20%';
-      img.style.height = '20%';
+      img.style.width = "20%";
+      img.style.height = "20%";
       contentEditableRef.current.appendChild(img);
     };
     reader.readAsDataURL(file);
@@ -25,27 +25,24 @@ export default function InsertPhoto() {
 
   return (
     <>
-    <InsertPhotoIcon onClick={handleButtonClick}/>
-      
+      <InsertPhotoIcon onClick={handleButtonClick} />
+
       <input
         type="file"
         ref={fileInputRef}
         onChange={handleFileSelect}
-        style={{ display: 'none' }}
+        style={{ display: "none" }}
       />
-      
-      
     </>
   );
 }
-
 
 // import React, { useRef } from "react";
 // import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
 
 // export default function InsertPhoto(){
 //   const inputRef = useRef(null);
-  
+
 //   function handleImageOpen() {
 //     inputRef.current.click()
 //   }
@@ -62,7 +59,7 @@ export default function InsertPhoto() {
 //           onClick={handleImageOpen}
 //             style={{ fontSize: "20", marginLeft: "7px",marginTop:'-0.5rem',fontWeight:'lighter' }}
 //           />
-//           <input 
+//           <input
 //           onChange={captureImage}
 //           hidden
 //           ref={inputRef}
@@ -73,8 +70,6 @@ export default function InsertPhoto() {
 
 //   )
 // }
-
-
 
 // import React, { useRef, useEffect } from "react";
 // import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
@@ -127,7 +122,7 @@ export default function InsertPhoto() {
 //             onClick={handleImageOpen}
 //             style={{ fontSize: "20", marginLeft: "7px",marginTop:'-0.5rem',fontWeight:'lighter' }}
 //           />
-//           <input 
+//           <input
 //           onChange={captureImage}
 //           hidden
 //           ref={inputRef}

@@ -1,4 +1,6 @@
-
+body{
+    background-color:#f0f8fa
+}
 .mainDiv{
     margin-top:.8rem;
 }
@@ -13,34 +15,33 @@
 }
 
 .firstDiv span{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
 }
 .icon{
-    padding-top: 10px;
+    padding-top: 7px;
     display:flex;
     gap:20px;
-    margin-left:-46rem;
-    font-size: 1.2rem;
+    margin-left:-49rem;
+    font-size: 1.1rem;
     cursor: pointer;
 }
 
 .lastDiv{
     margin-right: 12rem;
+    margin-top:.7em;
     display:flex;
     gap:28px;
-    font-size:1.8rem;
+    font-size:1.5rem;
     cursor:pointer;
 }
 .lock{
     font-size: 2.5rem;
-    margin-top: -1.2rem;
-   
+    margin-top: -1.5rem; 
 
 }
-span{
+.lock span{
     font-size: 18px;
-    gap:5px;
     font-family: Roboto;
 }
 .lock button{
@@ -50,14 +51,12 @@ span{
     height:2.5rem;
     width:6rem;
     background-color: #C2E7FF;
-    
-    
+    border:none; 
 }
 
 .bottomDiv{
-   
     margin-left:1rem;
-    margin-top: -3.5rem;
+    margin-top: -4.3rem;
 }
 .fileButton{
     margin-top:1.8rem;
@@ -96,3 +95,4 @@ span{
 .btn{
 color:black;
 }
+

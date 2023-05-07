@@ -5,16 +5,26 @@ export default function IncDecBtn() {
   const [count, setCount] = useState(1);
   const handleDec = () => {
     setCount(count-1);
+    document.execCommand('fontsize', false,count)
     if(count===1){
+        setCount(6)
+    }
+  };
+
+  const handleInc = () => {
+    setCount(count+1);
+    document.execCommand('fontsize', false,count)
+    if(count===6){
         setCount(1)
     }
   };
+
 
   return (
     <div>
       <button
         onClick={handleDec}
-        style={{ border: "none", backgroundColor: "#edf2fa" }}
+        style={{ border: "none", backgroundColor: "#edf2fa",marginRight:"0.5rem",fontSize:"1.2rem",fontWeight:"800" }}
       >
         -
       </button>
@@ -31,8 +41,8 @@ export default function IncDecBtn() {
         {count}
       </span>
       <button
-        onClick={() => setCount(count + 1)}
-        style={{ border: "none", backgroundColor: "#edf2fa" }}
+        onClick={handleInc}
+        style={{ border: "none", backgroundColor: "#edf2fa",fontSize:"1rem",fontWeight:"800" }}
       >
         +
       </button>

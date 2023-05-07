@@ -1,5 +1,5 @@
 import React from "react";
-import "./Normaltext.module.css"
+import "./Normaltext.module.css";
 
 export default function Normaltext() {
   const handleChange = (event) => {
