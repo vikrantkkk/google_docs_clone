@@ -1,6 +1,6 @@
 import React from "react";
 
-import Styles from "./header.module.css";
+import Styles from "./Header.module.css";
 import { AiOutlineStar } from "react-icons/ai";
 import { MdDriveFileMoveOutline } from "react-icons/md";
 import { BsCloudCheck } from "react-icons/bs";
