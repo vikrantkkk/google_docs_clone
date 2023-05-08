@@ -1,4 +1,6 @@
-
+body{
+    background-color:#f0f8fa
+}
 .mainDiv{
     margin-top:.8rem;
 }
@@ -13,34 +15,33 @@
 }
 
 .firstDiv span{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
 }
 .icon{
-    padding-top: 10px;
+    padding-top: 7px;
     display:flex;
     gap:20px;
-    margin-left:-46rem;
-    font-size: 1.2rem;
+    margin-left:-49rem;
+    font-size: 1.1rem;
     cursor: pointer;
 }
 
 .lastDiv{
     margin-right: 12rem;
+    margin-top:.7em;
     display:flex;
     gap:28px;
-    font-size:1.8rem;
+    font-size:1.5rem;
     cursor:pointer;
 }
 .lock{
     font-size: 2.5rem;
-    margin-top: -1.2rem;
-   
+    margin-top: -1.5rem; 
 
 }
-span{
+.lock span{
     font-size: 18px;
-    gap:5px;
     font-family: Roboto;
 }
 .lock button{
@@ -50,23 +51,26 @@ span{
     height:2.5rem;
     width:6rem;
     background-color: #C2E7FF;
-    
-    
+    border:none; 
 }
 
 .bottomDiv{
     margin-left:1rem;
-    margin-top: -1.5rem;
+    margin-top: -4.3rem;
 }
 .fileButton{
-    font-size:2rem;
+    margin-top:1.8rem;
+    font-size:2.5rem;
     height:4.7px;
     border:none;
     color:blue;
     background-color: white;
     cursor: pointer;
 }
-
+.buttonDiv{
+    margin-left:2rem;
+    margin-top:-2.3rem;
+}
 .menuOne{
     margin-left:0.7rem; 
     padding:50px;
@@ -87,3 +91,138 @@ span{
 .headerTwoDiv span{
     padding-left: 1rem;
 }
+
+.btn{
+color:black;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .mainDiv {
+      margin-top: 1.2rem;
+    }
+    .childDiv {
+      margin-left: 2rem;
+    }
+    .firstDiv {
+      margin-left: -1.5rem;
+    }
+    .icon {
+      margin-left: -25rem;
+      font-size: 1.5rem;
+    }
+    .lastDiv {
+      margin-right: 5rem;
+      gap: 20px;
+      font-size: 1.5rem;
+    }
+    .lock {
+      font-size: 3rem;
+      margin-top: -1.5rem;
+    }
+    .bottomDiv {
+      margin-left: 2rem;
+      margin-top: -2rem;
+    }
+    .fileButton {
+      font-size: 2.5rem;
+      height: 5px;
+    }
+    .menuOne {
+      margin-left: 1rem;
+      padding: 20px;
+    }
+    .menuTwo {
+      margin-left: 4rem;
+      margin-top: -3rem;
+    }
+    .menuThree {
+      margin-left: 7rem;
+      margin-top: -3rem;
+    }
+    .headerTwoDiv {
+      width: 18rem;
+    }
+    .headerTwoDiv span {
+      padding-left: 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .mainDiv {
+      margin-top: 1rem;
+    }
+    
+    .childDiv {
+      display: block;
+      margin-left: 0;
+    }
+    
+    .firstDiv {
+      margin-left: 0;
+    }
+    
+    .icon {
+      margin-left: 0;
+      font-size: 1.5rem;
+    }
+    
+    .lastDiv {
+      margin-right: 0;
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .lock {
+      font-size: 2.5rem;
+      margin-top: -0.8rem;
+    }
+    
+    span {
+      font-size: 16px;
+      gap: 3px;
+      font-family: Roboto;
+    }
+    
+    .lock button {
+      height: 2.2rem;
+      width: 5rem;
+    }
+    
+    .bottomDiv {
+      margin-left: 0;
+      margin-top: -1rem;
+    }
+    
+    .fileButton {
+      font-size: 2rem;
+      height: 4px;
+    }
+    
+    .menuOne {
+      margin-left: 0;
+      padding: 10px;
+    }
+    
+    .menuTwo {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+    
+    .menuThree {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+    
+    .headerTwoDiv {
+      width: 100%;
+      margin-top: 1rem;
+    }
+    
+    .headerTwoDiv span {
+      padding-left: 0;
+      font-size: 1rem;
+    }
+  }

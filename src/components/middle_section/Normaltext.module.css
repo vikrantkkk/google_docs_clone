@@ -1,0 +1,37 @@
+select:focus {
+    outline: none;
+  }
+  select{
+    border: none;
+    padding:2px ;
+    background-color: #edf2fa;
+    font-size: 1rem;
+  }
+  select:hover{
+    background-color: rgb(231, 235, 238);
+    border-radius: 5px;
+  }
+
+  .red {
+    height: 20px;
+    width:20px;
+    background-color: red;
+  }
+  
+  .blue {
+    height: 20px;
+    width:20px;
+    background-color: blue;
+  }
+  
+  .green {
+    height: 20px;
+    width:20px;
+    background-color: green;
+  }
+  
+  button {
+    border-radius: 2px;
+    border: none;
+    margin: 2px;
+  }

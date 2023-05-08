@@ -11,16 +11,28 @@
     background-color: #fff;
     width: 50%;
 }
- /* {
-    outline: 'none';
-        border: '1px solid #ddd';
-        border-radius: '4px';
-        padding: '8px';
-        min-height: '50px';
-        line-height: '1.5';
-        font-size: '16px';
-        font-family: 'Arial, sans-serif';
-       font-weight: '400';
-        color: '#333';
-   
-} */
+ 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main {
+    width: 90%;
+    padding: 2vh;
+    left: 5%;
+    }
+    
+    .inputarea {
+    width: 70%;
+    }
+    }
+
+
+    @media screen and (max-width: 767px) {
+        .main {
+            width: 100%;
+            padding: 2vh;
+            left: 0;
+        }
+        
+        .inputarea {
+            width: 90%;
+        }
+    }
