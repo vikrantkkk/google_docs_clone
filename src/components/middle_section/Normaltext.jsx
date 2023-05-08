@@ -1,5 +1,13 @@
-import React from "react";
-import "./Normaltext.module.css";
+import React,{useState} from "react";
+import style from "./Normaltext.module.css";
+import { TbTextColor } from "react-icons/tb";
+
+import {
+  Dialog,
+  DialogActions,
+  DialogTitle,
+  DialogContent,
+} from "@mui/material";
 
 export default function Normaltext() {
   const handleChange = (event) => {
@@ -23,10 +31,8 @@ export default function Normaltext() {
 }
 
 function Fontstyle() {
-  // const [selectedOption, setSelectedOption] = useState('');
-
   const handleChange = (e) => {
-    // setSelectedOption(event.target.value);
+    
     document.execCommand("fontName", "", e.target.value);
   };
   return (
@@ -49,6 +55,37 @@ function Fontstyle() {
   );
 }
 export { Fontstyle };
+
+function TextColor() {
+  const [open, setOpen] = useState(false);
+
+  function setColor(color) {
+    document.execCommand("forecolor", false, color);
+  }
+
+  return (
+    <>
+      <TbTextColor onClick={() => setOpen(true)} />
+      
+      <Dialog open={open} onClose={() => setOpen(false)}>
+        <DialogTitle>pick color</DialogTitle>
+        <DialogContent>
+          <button className={style.red} onClick={() => setColor("red")}>r</button>
+          <button className={style.blue} onClick={() => setColor("blue")}>b</button>
+          <button className={style.green} onClick={() => setColor("green")}>g</button>
+          
+        </DialogContent>
+        <DialogActions>
+          <button onClick={() => setOpen(false)}>cancel</button>
+          <button onClick={() => setOpen(false)}>agree</button>
+        </DialogActions>
+      </Dialog>
+  
+    </>
+  );
+}
+
+export { TextColor };
 
 // const fontFamilyList = [
 //   "serif",

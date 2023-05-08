@@ -7,15 +7,15 @@ export default function IncDecBtn() {
     setCount(count-1);
     document.execCommand('fontsize', false,count)
     if(count===1){
-        setCount(6)
+        setCount(1)
     }
   };
 
   const handleInc = () => {
     setCount(count+1);
     document.execCommand('fontsize', false,count)
-    if(count===6){
-        setCount(1)
+    if(count===7){
+        setCount(7)
     }
   };
 

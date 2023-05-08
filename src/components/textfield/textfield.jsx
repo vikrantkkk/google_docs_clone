@@ -1,13 +1,18 @@
-import React from "react";
-
+import React, { useRef } from "react";
+import InsertPhoto from "./InsertPhoto";
 import styles from "./Textfield.module.css";
 
+
+
 function Textfield() {
+  const contentEditableRef = useRef(null);
+
   return (
     <div className={styles.main}>
       <div
         className={styles.inputarea}
         contentEditable="true"
+        ref={contentEditableRef}
         style={{
           outline: "none",
           border: "1px solid #ddd",
@@ -21,8 +26,11 @@ function Textfield() {
           marginTop: "1rem",
         }}
       ></div>
+      <InsertPhoto contentEditableRef={contentEditableRef} />
     </div>
   );
 }
 
 export default Textfield;
+
+

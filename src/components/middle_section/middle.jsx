@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Middle.module.css";
 import { BiUndo } from "react-icons/bi";
 import { BiRedo } from "react-icons/bi";
 import { AiOutlineFormatPainter } from "react-icons/ai";
 import { BiPrinter } from "react-icons/bi";
-import { TbTextColor } from "react-icons/tb";
+// import { TbTextColor } from "react-icons/tb";
 import { BiHighlight } from "react-icons/bi";
 import { BiCommentAdd } from "react-icons/bi";
 import { RiArrowDropUpLine } from "react-icons/ri";
@@ -25,12 +25,13 @@ import FormatListNumberedIcon from "@mui/icons-material/FormatListNumbered";
 import FormatIndentDecreaseIcon from "@mui/icons-material/FormatIndentDecrease";
 import FormatIndentIncreaseIcon from "@mui/icons-material/FormatIndentIncrease";
 import FormatClearIcon from "@mui/icons-material/FormatClear";
+import { TextColor } from "./Normaltext";
 import Normaltext from "./Normaltext";
 import { Fontstyle } from "./Normaltext";
 import SelectLabels from "../../atoms/Selector";
 import IncDecBtn from "../../atoms/IncDecCount";
 import Editings from "../../atoms/Editing";
-import InsertPhoto from "./InsertPhoto";
+import InsertPhoto from "../textfield/InsertPhoto";
 
 const Middle = () => {
   const handleBold = () => {
@@ -78,7 +79,7 @@ const Middle = () => {
       <FormatBoldIcon onClick={handleBold} />
       <FormatItalicIcon onClick={handleItalic} />
       <FormatUnderlinedIcon onClick={handleUnderline} />
-      <TbTextColor />
+      <TextColor/>
       <BiHighlight />
       <InsertLinkIcon />
       <BiCommentAdd />

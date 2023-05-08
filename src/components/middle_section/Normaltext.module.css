@@ -11,3 +11,27 @@ select:focus {
     background-color: rgb(231, 235, 238);
     border-radius: 5px;
   }
+
+  .red {
+    height: 20px;
+    width:20px;
+    background-color: red;
+  }
+  
+  .blue {
+    height: 20px;
+    width:20px;
+    background-color: blue;
+  }
+  
+  .green {
+    height: 20px;
+    width:20px;
+    background-color: green;
+  }
+  
+  button {
+    border-radius: 2px;
+    border: none;
+    margin: 2px;
+  }
