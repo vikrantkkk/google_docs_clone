@@ -31,6 +31,7 @@ import Editings from "../../atoms/Editing";
 import InsertPhoto from "../textfield/InsertPhoto";
 
 const Middle = () => {
+  
   const handleBold = () => {
     document.execCommand("bold", false, null);
   };
