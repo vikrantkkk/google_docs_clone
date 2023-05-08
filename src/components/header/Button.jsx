@@ -12,7 +12,7 @@ import { MdOutlineTableChart } from "react-icons/md";
 import { BiBarChartSquare } from "react-icons/bi";
 import ArticleIcon from '@mui/icons-material/Article';
 import CopyAllIcon from '@mui/icons-material/CopyAll';
-import Styles from "./header.module.css";
+import Styles from "./Header.module.css";
 
 export default function Buttons() {
     
