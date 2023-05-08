@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import styles from "./RightSession.module.css";
+import styles from "./LeftSession.module.css";
 import { BiMenu } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
 
-function RightSession() {
+function LeftSession() {
   const [isOn, setIsOn] = useState(true);
 
   const handelClick = () => {
@@ -16,11 +16,10 @@ function RightSession() {
         <button onClick={handelClick} className={styles.toggle_icon}>
           {icon}
         </button>
-        <br />
-        {icon === <RxCross2 /> ? <input /> : ""}
+        <br />     
       </div>
     </div>
   );
 }
 
-export default RightSession;
+export default LeftSession;
