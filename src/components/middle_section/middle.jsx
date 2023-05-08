@@ -33,11 +33,10 @@ const Middle = () => {
       <BiPrinter />
       <SpellcheckIcon />
       <AiOutlineFormatPainter />
-     <SelectLabels/>
-      //normaltext 
-      //arial 
-      <IncDecBtn/>
-      {/* fontsize */}
+      <SelectLabels />
+
+      <IncDecBtn />
+     
       <FormatBoldIcon />
       <FormatItalicIcon />
       <FormatUnderlinedIcon />
@@ -47,7 +46,6 @@ const Middle = () => {
       <BiCommentAdd />
       <InsertPhotoIcon />
       <FormatAlignLeftIcon />
-      {/* not cmplt */}
       <FormatLineSpacingIcon />
       <ChecklistIcon />
       <FormatListBulletedIcon />
@@ -56,7 +54,6 @@ const Middle = () => {
       <FormatIndentIncreaseIcon />
       <FormatClearIcon />
       <MdOutlineModeEditOutline />
-      miss
       <RiArrowDropUpLine />
     </div>
   );
