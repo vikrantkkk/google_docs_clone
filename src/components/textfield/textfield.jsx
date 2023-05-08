@@ -2,8 +2,6 @@ import React, { useRef } from "react";
 import InsertPhoto from "./InsertPhoto";
 import styles from "./Textfield.module.css";
 
-
-
 function Textfield() {
   const contentEditableRef = useRef(null);
 
@@ -11,7 +9,7 @@ function Textfield() {
     <div className={styles.main}>
       <div
         className={styles.inputarea}
-        contentEditable="true"
+        contentEditable={true}
         ref={contentEditableRef}
         style={{
           outline: "none",
@@ -32,5 +30,3 @@ function Textfield() {
 }
 
 export default Textfield;
-
-

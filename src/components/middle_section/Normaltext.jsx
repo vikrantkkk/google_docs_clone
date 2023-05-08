@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import style from "./Normaltext.module.css";
 import { TbTextColor } from "react-icons/tb";
 
@@ -32,7 +32,6 @@ export default function Normaltext() {
 
 function Fontstyle() {
   const handleChange = (e) => {
-    
     document.execCommand("fontName", "", e.target.value);
   };
   return (
@@ -66,56 +65,27 @@ function TextColor() {
   return (
     <>
       <TbTextColor onClick={() => setOpen(true)} />
-      
+
       <Dialog open={open} onClose={() => setOpen(false)}>
         <DialogTitle>pick color</DialogTitle>
         <DialogContent>
-          <button className={style.red} onClick={() => setColor("red")}>r</button>
-          <button className={style.blue} onClick={() => setColor("blue")}>b</button>
-          <button className={style.green} onClick={() => setColor("green")}>g</button>
-          
+          <button className={style.red} onClick={() => setColor("red")}>
+            r
+          </button>
+          <button className={style.blue} onClick={() => setColor("blue")}>
+            b
+          </button>
+          <button className={style.green} onClick={() => setColor("green")}>
+            g
+          </button>
         </DialogContent>
         <DialogActions>
           <button onClick={() => setOpen(false)}>cancel</button>
           <button onClick={() => setOpen(false)}>agree</button>
         </DialogActions>
       </Dialog>
-  
     </>
   );
 }
 
 export { TextColor };
-
-// const fontFamilyList = [
-//   "serif",
-//   "arial",
-//   "sans-serif",
-//   "monospace",
-//   "cursive",
-//   "fantasy",
-//   "system-ui",
-//   "ui-serif",
-//   "ui-sans-serif",
-//   "ui-monospace",
-//   "ui-rounded",
-//   "emoji",
-//   "math",
-//   "fangsong",
-//   "Georgia",
-//   "Times New Roman",
-//   "Impact",
-// ];
-// function handlefamily(e){
-//   document.execCommand("fontName", "", e.target.value);
-// }
-
-// <div >
-//               <select onChange={(e) => handlefamily(e)}>
-//               <option>san-sherif</option>
-//               {fontFamilyList.map((element) => (
-//                   <option >{element}</option>
-
-//               ))}
-//               </select>
-//             </div>

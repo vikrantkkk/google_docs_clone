@@ -96,3 +96,133 @@ body{
 color:black;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .mainDiv {
+      margin-top: 1.2rem;
+    }
+    .childDiv {
+      margin-left: 2rem;
+    }
+    .firstDiv {
+      margin-left: -1.5rem;
+    }
+    .icon {
+      margin-left: -25rem;
+      font-size: 1.5rem;
+    }
+    .lastDiv {
+      margin-right: 5rem;
+      gap: 20px;
+      font-size: 1.5rem;
+    }
+    .lock {
+      font-size: 3rem;
+      margin-top: -1.5rem;
+    }
+    .bottomDiv {
+      margin-left: 2rem;
+      margin-top: -2rem;
+    }
+    .fileButton {
+      font-size: 2.5rem;
+      height: 5px;
+    }
+    .menuOne {
+      margin-left: 1rem;
+      padding: 20px;
+    }
+    .menuTwo {
+      margin-left: 4rem;
+      margin-top: -3rem;
+    }
+    .menuThree {
+      margin-left: 7rem;
+      margin-top: -3rem;
+    }
+    .headerTwoDiv {
+      width: 18rem;
+    }
+    .headerTwoDiv span {
+      padding-left: 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .mainDiv {
+      margin-top: 1rem;
+    }
+    
+    .childDiv {
+      display: block;
+      margin-left: 0;
+    }
+    
+    .firstDiv {
+      margin-left: 0;
+    }
+    
+    .icon {
+      margin-left: 0;
+      font-size: 1.5rem;
+    }
+    
+    .lastDiv {
+      margin-right: 0;
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .lock {
+      font-size: 2.5rem;
+      margin-top: -0.8rem;
+    }
+    
+    span {
+      font-size: 16px;
+      gap: 3px;
+      font-family: Roboto;
+    }
+    
+    .lock button {
+      height: 2.2rem;
+      width: 5rem;
+    }
+    
+    .bottomDiv {
+      margin-left: 0;
+      margin-top: -1rem;
+    }
+    
+    .fileButton {
+      font-size: 2rem;
+      height: 4px;
+    }
+    
+    .menuOne {
+      margin-left: 0;
+      padding: 10px;
+    }
+    
+    .menuTwo {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+    
+    .menuThree {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+    
+    .headerTwoDiv {
+      width: 100%;
+      margin-top: 1rem;
+    }
+    
+    .headerTwoDiv span {
+      padding-left: 0;
+      font-size: 1rem;
+    }
+  }

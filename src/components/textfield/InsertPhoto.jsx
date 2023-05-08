@@ -23,7 +23,7 @@ export default function InsertPhoto({ contentEditableRef }) {
   }
 
   // add this line
-// console.log("contentEditableRef:", contentEditableRef); 
+  // console.log("contentEditableRef:", contentEditableRef);
   return (
     <>
       <InsertPhotoIcon onClick={handleButtonClick} />
@@ -37,39 +37,3 @@ export default function InsertPhoto({ contentEditableRef }) {
     </>
   );
 }
-
-
-// import React, { useRef } from "react";
-// import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
-
-// export default function InsertPhoto(){
-//   const inputRef = useRef(null);
-
-//   function handleImageOpen() {
-//     inputRef.current.click()
-//   }
-//   function captureImage(event) {
-//     if (event.target.files[0] ) {
-//       console.log(event.target.files[0])
-//       document.execCommand("insertImage","",URL.createObjectURL(event.target.files[0]));
-//     }
-//   }
-//   return (
-//     <>
-//     <div>
-//           <AddPhotoAlternateIcon
-//           onClick={handleImageOpen}
-//             style={{ fontSize: "20", marginLeft: "7px",marginTop:'-0.5rem',fontWeight:'lighter' }}
-//           />
-//           <input
-//           onChange={captureImage}
-//           hidden
-//           ref={inputRef}
-//           type="file"
-//           />
-//         </div>
-//         </>
-
-//   )
-// }
-

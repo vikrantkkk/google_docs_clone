@@ -18,7 +18,7 @@ export default function SelectLabels() {
           onChange={handleChange}
           displayEmpty
           inputProps={{ "aria-label": "Without label" }}
-          sx={{ height: "2rem", border: 'none!important'  }}
+          sx={{ height: "2rem", border: "none!important" }}
         >
           <MenuItem value={"Fit"} sx={{ borderBottom: "1px solid black" }}>
             Fit
