@@ -7,6 +7,7 @@ export default function IncDecBtn() {
     setCount(count - 1);
     document.execCommand("fontsize", false, count);
     if (count === 1) {
+      //example
       setCount(1);
     }
   };
